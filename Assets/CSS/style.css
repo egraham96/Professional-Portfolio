@@ -248,7 +248,7 @@ footer nav ul li a {
         flex-direction: column;
     }
     header {
-        justify-content: center;
+        justify-content: space-evenly;
         vertical-align: center;
     }
     header nav ul li {
