@@ -1,0 +1,267 @@
+/*UNIVERSAL STYLINGS*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER with NAVIGATION*/
+header {
+    background: #d48db9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-family: Brush Script MT, cursive;
+    font-size: 40px;
+    color: white;
+}
+
+header nav {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 10px;
+    padding-left: 0px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+}
+
+nav a:hover {
+    color: grey;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+/*SECTION WITH MY COMPLETED WORKS*/
+.applicationsbox {
+    background-color: #f0d9e7;
+    width: 75%;
+    padding-left: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    text-align: center;}
+
+    
+#PortfolioText{display:block;
+        color: darkolivegreen;
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+#Moreinfo {display:none;}
+
+    
+#PortfolioText:hover + #Moreinfo{display:block;}
+
+/*MY FIRST COMPLETED APPLICATION (LARGER IMAGE)*/
+#app1 {width: 100%;
+    position: relative;
+    margin-top: 30px;
+}
+
+#app1 img {
+    padding-top: 0px;
+    width: 100%;
+    max-height: 300px;
+    border: 2px solid darkolivegreen;
+}
+
+
+#app1 #LinktoApp {
+    background-color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+
+#app1 #LinktoApp a {
+    text-decoration: none;
+    text-align: center;
+    color: darkolivegreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#app1 #LinktoApp:hover{
+    color: #111; 
+    background-color: #d48db9;
+    box-shadow: 0 0 200px yellowgreen;}
+
+/*SECTION WITH MY 4 OTHER COMPLETED APPLICATIONS (SMALLER IMAGES)*/
+
+#fourotherapps {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.fourapps {
+    width: 50%;
+    height: 50%;
+    border: 2px solid darkolivegreen;
+}
+
+.fourapps img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.fourapps h2 {background-color: transparent;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+}
+
+.fourapps h2:hover{
+    color: #111; 
+    background-color: #d48db9;
+    box-shadow: 0 0 100px yellowgreen;}
+
+.fourapps h2 a {
+    text-decoration: none;
+    color: darkolivegreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: right;
+}
+
+/*ABOUT ME ASIDE*/
+aside {
+    background-color: #f0d9e7;
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-right: 3px solid grey;
+   
+}
+
+aside img {
+    width: 250px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+aside p {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+.ImportantText {display: block;
+    color: darkolivegreen;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/*FOOTER with NAVIGATION*/
+footer {
+    background: #d48db9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3 {
+    margin: 0;
+    padding: 0;
+    font-family: Brush Script MT, cursive;
+    font-size: 40px;
+    color: white;
+}
+
+footer nav {
+    margin-left: 10px;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 10px;
+    padding-left: 0px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+        height: auto;
+        order: 1;
+    }
+    .applicationsbox {
+        width: 100%;
+        height: auto;
+        order: 2;
+    }
+    .fourapps {
+        width: 100%;
+        height: 25%;
+        flex-direction: column;
+    }
+    header {
+        justify-content: center;
+        vertical-align: center;
+    }
+    header nav ul li {
+        display: block;
+        text-align: center;
+    }
+    header h1, header nav ul li a, footer h3, footer nav ul li a {
+        color: gray;
+    }
+    aside img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
