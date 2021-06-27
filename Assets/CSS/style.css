@@ -4,7 +4,6 @@
 }
 
 body {
-    background-color: white;
     margin: 0;
     padding: 0;
 }
@@ -51,7 +50,7 @@ nav a:hover {
 }
 
 
-main {
+main {background-color: #f0d9e7;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
