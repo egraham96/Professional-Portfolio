@@ -1,4 +1,5 @@
 /*UNIVERSAL STYLINGS*/
+
 * {
     box-sizing: border-box;
 }
@@ -8,7 +9,9 @@ body {
     padding: 0;
 }
 
+
 /*HEADER with NAVIGATION*/
+
 header {
     background: #d48db9;
     display: flex;
@@ -49,8 +52,8 @@ nav a:hover {
     color: grey;
 }
 
-
-main {background-color: #f0d9e7;
+main {
+    background-color: #f0d9e7;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -58,29 +61,37 @@ main {background-color: #f0d9e7;
 
 
 /*SECTION WITH MY COMPLETED WORKS*/
+
 .applicationsbox {
     background-color: #f0d9e7;
     width: 75%;
     padding-left: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 12px;
-    text-align: center;}
+    text-align: center;
+}
 
-    
-#PortfolioText{display:block;
-        color: darkolivegreen;
-        font-size: 30px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: bold;
-    }
+#PortfolioText {
+    display: block;
+    color: darkolivegreen;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
 
-#Moreinfo {display:none;}
+#Moreinfo {
+    display: none;
+}
 
-    
-#PortfolioText:hover + #Moreinfo{display:block;}
+#PortfolioText:hover+#Moreinfo {
+    display: block;
+}
+
 
 /*MY FIRST COMPLETED APPLICATION (LARGER IMAGE)*/
-#app1 {width: 100%;
+
+#app1 {
+    width: 100%;
     position: relative;
     margin-top: 30px;
 }
@@ -91,7 +102,6 @@ main {background-color: #f0d9e7;
     max-height: 300px;
     border: 2px solid darkolivegreen;
 }
-
 
 #app1 #LinktoApp {
     background-color: white;
@@ -110,10 +120,12 @@ main {background-color: #f0d9e7;
     font-weight: bolder;
 }
 
-#app1 #LinktoApp:hover{
-    color: #111; 
+#app1 #LinktoApp:hover {
+    color: #111;
     background-color: #d48db9;
-    box-shadow: 0 0 200px yellowgreen;}
+    box-shadow: 0 0 200px yellowgreen;
+}
+
 
 /*SECTION WITH MY 4 OTHER COMPLETED APPLICATIONS (SMALLER IMAGES)*/
 
@@ -137,17 +149,18 @@ main {background-color: #f0d9e7;
     height: 100%;
 }
 
-
-.fourapps h2 {background-color: transparent;
+.fourapps h2 {
+    background-color: transparent;
     width: fit-content;
     padding: 0;
     margin: 0;
 }
 
-.fourapps h2:hover{
-    color: #111; 
+.fourapps h2:hover {
+    color: #111;
     background-color: #d48db9;
-    box-shadow: 0 0 100px yellowgreen;}
+    box-shadow: 0 0 100px yellowgreen;
+}
 
 .fourapps h2 a {
     text-decoration: none;
@@ -158,7 +171,9 @@ main {background-color: #f0d9e7;
     text-align: right;
 }
 
+
 /*ABOUT ME ASIDE*/
+
 aside {
     background-color: #f0d9e7;
     width: 25%;
@@ -167,7 +182,6 @@ aside {
     flex-wrap: wrap;
     justify-content: center;
     border-right: 3px solid grey;
-   
 }
 
 aside img {
@@ -184,14 +198,17 @@ aside p {
     text-align: center;
 }
 
-.ImportantText {display: block;
+.ImportantText {
+    display: block;
     color: darkolivegreen;
     font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
+
 /*FOOTER with NAVIGATION*/
+
 footer {
     background: #d48db9;
     display: flex;
@@ -227,7 +244,9 @@ footer nav ul li a {
     color: white;
 }
 
+
 /*MEDIA QUERIES*/
+
 @media screen and (max-width: 768px) {
     main {
         flex-direction: column;
@@ -238,9 +257,13 @@ footer nav ul li a {
         order: 1;
     }
     .applicationsbox {
+        padding-left: 0px;
         width: 100%;
         height: auto;
         order: 2;
+    }
+    #fourotherapps {
+        height: 800px;
     }
     .fourapps {
         width: 100%;
@@ -255,7 +278,10 @@ footer nav ul li a {
         display: block;
         text-align: center;
     }
-    header h1, header nav ul li a, footer h3, footer nav ul li a {
+    header h1,
+    header nav ul li a,
+    footer h3,
+    footer nav ul li a {
         color: gray;
     }
     aside img {
