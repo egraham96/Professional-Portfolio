@@ -1,7 +1,7 @@
 
 # Homework Assignment 2 - Professional Portfolio
 
-## Your Task:
+## Description:
 This week's homework required us to make a Portfolio to showcase current and future completed applications. Our website had to be responsive to different screen sizes, had to include working links, pseudoclasses such as hover and working images.
 
 ## Built With:
@@ -15,8 +15,8 @@ This week's homework required us to make a Portfolio to showcase current and fut
 ## Preview of Working Site:
 ![Screenshot of Deployed Application](Assets/ScreenshotofDeployedApplication.PNG)
 
-## Contact the Creator:
-Emma Graham: https://github.com/egraham96
+## How to Contribute:
+If you'd like to contribute to this project please send an email to eeg4@uw.edu or message me on github: egraham96
 
 ## License:
 ![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
